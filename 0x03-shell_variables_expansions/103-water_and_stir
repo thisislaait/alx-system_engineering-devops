@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$WATER$STIR" | rev | sed 's/chol/school/' | rev
+echo "ibase=water;${WATER}+ibase=stir;${STIR}" | bc | tr -d '\n'
